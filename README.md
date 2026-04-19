@@ -79,6 +79,14 @@ Things explicitly out of scope for v1:
 - [menily/toolkit](https://github.com/MenilyIntelligence/toolkit) — reference implementation of encoders/decoders for this schema
 - [menily/research](https://github.com/MenilyIntelligence/research) — design notes behind the schema decisions
 
+## Extended design notes
+
+For a longer-form walkthrough of the field-level design decisions — why `language.variants` is recommended-required, why `action.space` is a controlled vocabulary, why `body.morphology` + `body.dof_map` are the real keys to cross-embodiment transfer, and how Menily/schema relates to Open X-Embodiment / RLDS / BONES-SEED — see the full author's note on CSDN:
+
+- 📝 [VLA 任务级示教数据 schema 设计笔记：Menily/schema v1 规范与六字段解析](https://blog.csdn.net/2611_95864581/article/details/160290391) — Masashi, 2026-04
+
 ---
 
 中文：`menily/schema` 是一份针对 VLA（视觉-语言-动作）模型训练的**任务级示教数据规范**。定义 task_id / language / visual / action / body / meta 六大顶层字段，统一异构数据源的格式，便于跨机构数据池化与跨具身迁移。欢迎 issue 或邮件讨论。
+
+更长的字段设计笔记请见：[VLA 任务级示教数据 schema 设计笔记（CSDN）](https://blog.csdn.net/2611_95864581/article/details/160290391)
